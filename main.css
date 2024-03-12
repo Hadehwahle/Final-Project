@@ -799,6 +799,90 @@ footer p {
   padding-bottom: 129px;
   margin-right: 100px;
 }
+/* Register page */
+.reg-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rem;
+}
+.form-input {
+  width: 59rem;
+  height: 92.5625rem;
+  background: #fafafe;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+form {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 2.5rem;
+}
+.form-input input,
+.form-input select {
+  border-radius: 1rem;
+  border: 1px solid #000;
+  width: 23.75rem;
+  height: 4rem;
+  padding: 0.625rem;
+  outline: none;
+  font-size: 1.3rem;
+  display: flex;
+  gap: 2.25rem;
+  margin-left: 4rem;
+}
+.form-input textarea {
+  border-radius: 1rem;
+  border: 1px solid #000;
+  padding: 0.625rem;
+  outline: none;
+  font-size: 1.3rem;
+}
+.form-input input::placeholder {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+#email {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  width: 50rem;
+}
+#text-about {
+  grid-column: 1 / span 2;
+  grid-row: 8;
+  width: 50rem;
+  height: 18rem;
+  margin-inline: 3.7rem;
+}
+.payment {
+  width: 50rem;
+  height: 4rem;
+  padding: 0.9375rem 3.125rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.9375rem;
+  background: #ed212c;
+  color: #fafafe;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  margin-inline: 3.7rem;
+  transition: all 0.3s ease-in-out;
+}
+.payment:hover {
+  background-color: #02021f;
+}
+.form-input h1 {
+  color: #000;
+  font-size: 3.0625rem;
+  font-weight: 700;
+  margin: 2rem 0rem 5rem 3.5rem;
+  padding: 0.625rem;
+}
 
 /* Media query */
 @media (max-width: 1368px) {
@@ -899,6 +983,34 @@ footer p {
     text-align: justify;
     margin-right: 20px;
   }
+  .form-input {
+    width: 50rem;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .form-input input,
+  .form-input select {
+    gap: 2rem;
+    margin-left: 3rem;
+    width: 21rem;
+  }
+  #email {
+    width: 43.5rem;
+  }
+  #text-about {
+    width: 43.5rem;
+    margin-inline: 3rem;
+  }
+  .payment {
+    width: 43.5rem;
+    margin-inline: 3rem;
+  }
+
+  .form-input h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0rem 5rem 3rem;
+  }
 }
 @media (max-width: 1000px) {
   .resource-main {
@@ -932,18 +1044,60 @@ footer p {
     width: 700px;
     padding-inline: 1rem;
   }
-  .container-text p{
+  .container-text p {
     margin: 0;
     font-size: 1.3rem;
   }
-  .container-text h1{
+  .container-text h1 {
     margin: 0;
   }
-  .about-main{
+  .about-main {
     height: 30rem;
   }
-  .about-main div p{
+  .about-main div p {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 920px) {
+  .reg-form {
+    height: 80rem;
+  }
+  .form-input {
+    width: 40rem;
+  }
+  .form-input input,
+  .form-input select {
+    gap: 1.5rem;
+    margin-left: 2rem;
+    width: 17rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  #email {
+    width: 35.5rem;
+  }
+  #text-about {
+    width: 35.5rem;
+    margin-inline: 2rem;
+    height: 10rem;
+  }
+  .payment {
+    width: 35.5rem;
+    margin-inline: 2rem;
+  }
+  .form-input h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0rem 2rem 2rem;
+  }
+  .form-input input::placeholder {
+    font-size: 1rem;
+  }
+  .form-input textarea {
+    font-size: 1rem;
+  }
+  .payment {
+    font-size: 1rem;
   }
 }
 @media (max-width: 850px) {
@@ -1001,11 +1155,57 @@ footer p {
     font-size: 2rem;
     margin-block: 0.8rem;
   }
-  .about-main{
+  .about-main {
     height: 25rem;
   }
-  .about-main div p{
+  .about-main div p {
     font-size: 2rem;
+  }
+  .reg-form {
+    margin-block: 2rem;
+    height: auto;
+  }
+  .form-input {
+    width: 30rem;
+  }
+  form {
+    gap: 1rem;
+  }
+  .form-input input,
+  .form-input select {
+    margin-left: 2rem;
+    width: 25.5rem;
+    height: 3rem;
+    font-size: 1rem;
+    grid-column: 1 / span 1;
+  }
+  #email {
+    width: 25.5rem;
+    grid-column: 1 / span 1;
+  }
+
+  #text-about {
+    width: 25.5rem;
+    margin-inline: 2rem;
+    height: 10rem;
+    grid-row: inherit;
+  }
+  .payment {
+    width: 25.5rem;
+    grid-column: 1 / span 1;
+    height: 3.5rem;
+  }
+  .form-input h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .form-input input::placeholder {
+    font-size: 1rem;
+  }
+  .form-input textarea {
+    font-size: 1rem;
   }
 }
 @media (max-width: 720px) {
@@ -1038,6 +1238,28 @@ footer p {
   .sub-learn {
     width: 23rem;
   }
+  .form-input {
+    width: 25rem;
+  }
+  .form-input input,
+  .form-input select {
+    width: 21rem;
+  }
+  #email {
+    width: 21rem;
+  }
+
+  #text-about {
+    width: 21rem;
+  }
+  .payment {
+    width: 21rem;
+  }
+  .form-input h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-block: 1rem;
+  }
 }
 @media (max-width: 540px) {
   .container-text {
@@ -1056,11 +1278,25 @@ footer p {
   .pic-wrapper img {
     width: 23rem;
   }
-  .about-main{
+  .about-main {
     height: 20rem;
   }
-  .about-main div p{
+  .about-main div p {
     font-size: 1.5rem;
+  }
+  .form-input {
+    width: 20rem;
+  }
+  .form-input input,
+  .form-input select,
+  #email,
+  #text-about,
+  .payment {
+    width: 17.5rem;
+    margin-left: 1rem;
+  }
+  .form-input h1 {
+    font-weight: 500;
   }
 }
 @media (max-width: 400px) {
@@ -1115,4 +1351,3 @@ footer p {
     width: 400px;
   }
 }
-
