@@ -883,6 +883,99 @@ form {
   margin: 2rem 0rem 5rem 3.5rem;
   padding: 0.625rem;
 }
+/* Sign in section */
+.sign_in {
+  width: 57.0625rem;
+  height: 76.125rem;
+  border: 1px solid #000;
+  background: #fafafe;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+#sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rem;
+}
+.sign_in {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-items: center;
+}
+.sign_in input {
+  width: 50rem;
+  height: 4rem;
+  padding: 0.625rem;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 400;
+  outline: none;
+}
+.sign_in a {
+  color: #ed212c;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin-left: 35rem;
+}
+.sign_in #account {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#upsign {
+  color: #ed212c;
+  cursor: pointer;
+}
+.rule {
+  display: flex;
+  align-items: center;
+  font-size: 1.5625rem;
+  font-weight: 500;
+}
+.rule span {
+  width: 12.5rem;
+  height: 0.0625rem;
+  background: #262525;
+  font-size: 0.0625rem;
+}
+.sign_in h1 {
+  font-size: 3.0625rem;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 3.3rem;
+}
+.sign_in input::placeholder {
+  color: #000;
+}
+#Insign,
+#google,
+#apple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49.375rem;
+  height: 4rem;
+  padding: 0.9375rem 3.125rem;
+  gap: 0.625rem;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+}
+#Insign {
+  border: none;
+  background: #ed212c;
+  color: #fafafe;
+  font-size: 2.4375rem;
+  font-weight: 400;
+}
+#google,
+#apple {
+  color: #000;
+  font-size: 1.9375rem;
+  font-weight: 500;
+}
 
 /* Media query */
 @media (max-width: 1368px) {
@@ -1011,6 +1104,64 @@ form {
     font-weight: 700;
     margin: 2rem 0rem 5rem 3rem;
   }
+  .sign_in {
+    width: 45rem;
+    height: 75rem;
+  }
+  #sign {
+    height: 100rem;
+  }
+  .sign_in {
+    gap: 3rem;
+  }
+  .sign_in input {
+    width: 40rem;
+    height: 3.8rem;
+  }
+  .sign_in a {
+    font-weight: 600;
+    margin-left: 25rem;
+  }
+  .sign_in #account {
+    font-size: 1.4rem;
+  }
+  .rule {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .rule span {
+    width: 12rem;
+  }
+  .sign_in h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 3rem;
+  }
+  #Insign,
+  #google,
+  #apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 4rem;
+    padding: 0.9375rem 3.125rem;
+    gap: 0.625rem;
+    border-radius: 0.9375rem;
+    cursor: pointer;
+  }
+  #Insign {
+    font-size: 2rem;
+  }
+  #google,
+  #apple {
+    font-size: 1.5rem;
+  }
+  #google img,
+  #apple img {
+    width: 1.5rem;
+  }
 }
 @media (max-width: 1000px) {
   .resource-main {
@@ -1129,7 +1280,64 @@ form {
   nav.show {
     display: flex;
   }
+  .sign_in {
+    width: 35rem;
+    height: 75rem;
+  }
+  #sign {
+    height: auto;
+    margin-block: 4rem;
+  }
+  .sign_in {
+    gap: 2.5rem;
+    height: auto;
+  }
+  .sign_in input {
+    width: 30rem;
+    height: 3.7rem;
+  }
+  .sign_in a {
+    font-weight: 600;
+    margin-left: 15rem;
+  }
+  .sign_in #account {
+    font-size: 1.3rem;
+  }
+  .rule {
+    font-size: 1.3rem;
+  }
+  .rule span {
+    width: 8rem;
+  }
+  .sign_in h1 {
+    font-size: 2.5rem;
+  }
+  #Insign,
+  #google,
+  #apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 4rem;
+    padding: 0.9375rem 3.125rem;
+    gap: 0.625rem;
+    border-radius: 0.9375rem;
+    cursor: pointer;
+  }
+  #Insign {
+    font-size: 1.5rem;
+  }
+  #google,
+  #apple {
+    font-size: 1.5rem;
+  }
+  #google img,
+  #apple img {
+    width: 1.5rem;
+  }
 }
+
 @media (max-width: 770px) {
   .liverpool {
     margin-top: 1rem;
@@ -1228,6 +1436,55 @@ form {
     grid-template-columns: 100%;
   }
 }
+
+@media (max-width: 660px) {
+  .sign_in {
+    width: 28rem;
+    height: auto;
+  }
+  #sign {
+    height: auto;
+    margin-block: 4rem;
+  }
+  .sign_in input {
+    width: 24rem;
+    height: 3.3rem;
+  }
+  .sign_in input::placeholder {
+    font-size: 1.3rem;
+  }
+  .sign_in a {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 15rem;
+  }
+  .rule {
+    font-size: 1.3rem;
+  }
+  .rule span {
+    width: 5rem;
+  }
+  .sign_in h1 {
+    font-size: 2rem;
+  }
+  #Insign,
+  #google,
+  #apple {
+    width: 24rem;
+    height: 3.5rem;
+  }
+  #Insign {
+    font-size: 1.3rem;
+  }
+  #google,
+  #apple {
+    font-size: 1.3rem;
+  }
+  #google img,
+  #apple img {
+    width: 1.3rem;
+  }
+}
 @media (max-width: 590px) {
   .resource-pic {
     height: 235px;
@@ -1265,6 +1522,50 @@ form {
   .container-text {
     width: 450px;
     padding-inline: 2rem;
+  }
+  .sign_in {
+    width: 18rem;
+    height: auto;
+    gap: 1.5rem;
+  }
+  .sign_in input {
+    width: 16rem;
+    height: 3.3rem;
+  }
+  .sign_in a {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .rule {
+    font-size: 1rem;
+  }
+  .rule span {
+    width: 2rem;
+  }
+  .sign_in h1 {
+    font-size: 1.5rem;
+  }
+  .sign_in #account {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+  }
+  #Insign,
+  #google,
+  #apple {
+    width: 16rem;
+    height: 3.5rem;
+  }
+  #Insign {
+    font-size: 1.1rem;
+  }
+  #google,
+  #apple {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #google img,
+  #apple img {
+    width: 1.3rem;
   }
 }
 @media (max-width: 490px) {
