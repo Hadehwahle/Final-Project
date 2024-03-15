@@ -1147,6 +1147,10 @@ form {
   .svg svg{
     width: 1005px;
   }
+  .accolade-pic{
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 @media (max-width: 1430px) {
   .brand {
