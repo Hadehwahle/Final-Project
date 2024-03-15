@@ -1143,6 +1143,11 @@ form {
 }
 
 /* Media query */
+@media (min-width: 1430px) {
+  .svg svg{
+    width: 1005px;
+  }
+}
 @media (max-width: 1430px) {
   .brand {
     position: relative;
@@ -1165,6 +1170,9 @@ form {
     text-align: center;
     z-index: 1;
     padding-right: 0;
+  }
+  .svg svg {
+    width: 1000px;
   }
 }
 
@@ -1288,6 +1296,9 @@ form {
   .trending-courses h2 {
     padding-top: 140px;
     padding-bottom: 50px;
+  }
+  .svg svg {
+    width: 1000px;
   }
 }
 
