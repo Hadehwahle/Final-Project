@@ -185,7 +185,6 @@ nav a:hover {
   font-size: 1.25rem;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
-
   cursor: pointer;
 }
 .text_input_1 > button:hover {
@@ -224,6 +223,7 @@ div > .sign-up {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .btn-courses {
   display: flex;
@@ -1218,6 +1218,44 @@ form {
   .contact-form button {
     width: 17.3rem;
   }
+  .hero {
+    justify-content: space-between;
+    height: 45.6rem;
+    background: url("images/hero-image.png") right 150px bottom,
+      url("images/data-science.svg") top 166px right 462px,
+      url("images/engineering.svg") right 226px top 70px,
+      url("images/product.svg") right 73px top 230px,
+      url("images/circle.svg") right 94px top 70px,
+      linear-gradient(177deg, #02021fd8 7.13%, #fffdfd 140.34%);
+    background-repeat: no-repeat;
+  }
+  .cohort img {
+    width: 800px;
+  }
+  .welcome {
+    isolation: isolate;
+    padding-left: 100px;
+  }
+  .welcome h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .text_input_1 {
+    width: 600px;
+    height: 52px;
+  }
+  .text_input_1 > input {
+    font-size: 1.1rem;
+    font-weight: 400;
+    height: 52px;
+  }
+  .text_input_1 > button {
+    height: 53px;
+  }
+  .hero-account {
+    display: flex;
+    gap: 3px;
+  }
 }
 @media (max-width: 1228px) {
   header {
@@ -1426,6 +1464,60 @@ form {
   #google img,
   #apple img {
     width: 1.5rem;
+  }
+  .hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 40rem;
+    background: url("images/hero-image.png") center bottom / 350px,
+      url("images/data-science.svg") top 130px right 70% / 100px,
+      url("images/engineering.svg") right 50% top 40px / 100px,
+      url("images/product.svg") right 33% top 130px / 100px,
+      url("images/circle.svg") right 52% top 50px / 350px,
+      linear-gradient(177deg, #02021fd8 7.13%, #fffdfd 140.34%);
+    background-repeat: no-repeat;
+  }
+  .hero::after {
+    content: "";
+    background-color: #02021f;
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+  }
+  .cohort {
+    z-index: 2;
+    top: 36rem;
+  }
+  .cohort img {
+    width: 700px;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 8;
+    padding-left: 0px;
+  }
+  .welcome h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .text_input_1 {
+    width: 600px;
+    height: 52px;
+  }
+  .text_input_1 > input {
+    font-size: 1.1rem;
+    font-weight: 400;
+    height: 52px;
+  }
+  .text_input_1 > button {
+    height: 52px;
+  }
+  .hero-account {
+    display: flex;
+    gap: 3px;
   }
 }
 @media (max-width: 1000px) {
@@ -1769,6 +1861,43 @@ form {
   .intern-wrapper {
     grid-template-columns: 100%;
   }
+  .hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 40rem;
+    background: url("images/hero-image.png") center bottom / 350px,
+      url("images/data-science.svg") top 130px right 80% / 100px,
+      url("images/engineering.svg") right 50% top 40px / 100px,
+      url("images/product.svg") right 22% top 130px / 100px,
+      url("images/circle.svg") right 52% top 50px / 350px,
+      linear-gradient(177deg, #02021fd8 7.13%, #fffdfd 140.34%);
+    background-repeat: no-repeat;
+  }
+  .cohort {
+    top: 37.5rem;
+  }
+  .cohort img {
+    width: 450px;
+  }
+  .welcome h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .text_input_1 {
+    width: 400px;
+    height: 52px;
+    padding: 10px 0px 10px 30px;
+  }
+  .text_input_1 > input {
+    font-size: 1rem;
+    font-weight: 400;
+    height: 52px;
+  }
+  .text_input_1 > button {
+    height: 52px;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 660px) {
@@ -1925,6 +2054,43 @@ form {
   #apple img {
     width: 1.3rem;
   }
+  .hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 40rem;
+    background: url("images/hero-image.png") center bottom / 350px,
+      url("images/data-science.svg") top 130px right 92% / 100px,
+      url("images/engineering.svg") right 50% top 40px / 100px,
+      url("images/product.svg") right 8% top 130px / 100px,
+      url("images/circle.svg") right 52% top 50px / 350px,
+      linear-gradient(177deg, #02021fd8 7.13%, #fffdfd 140.34%);
+    background-repeat: no-repeat;
+  }
+  .cohort {
+    top: 37.5rem;
+  }
+  .cohort img {
+    width: 450px;
+  }
+  .welcome h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .text_input_1 {
+    width: 400px;
+    height: 52px;
+    padding: 10px 0px 10px 20px;
+  }
+  .text_input_1 > input {
+    font-size: 1rem;
+    font-weight: 400;
+    height: 52px;
+  }
+  .text_input_1 > button {
+    height: 52px;
+    font-size: 1rem;
+  }
 }
 @media (max-width: 490px) {
   .register-btn {
@@ -2001,6 +2167,45 @@ form {
     justify-content: center;
     align-items: center;
   }
+  .hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 35rem;
+    background: url("images/hero-image.png") center bottom / 300px,
+      url("images/data-science.svg") top 130px right 90% / 80px,
+      url("images/engineering.svg") right 50% top 40px / 80px,
+      url("images/product.svg") right 15% top 130px / 80px,
+      url("images/circle.svg") right 52% top 50px / 300px,
+      linear-gradient(177deg, #02021fd8 7.13%, #fffdfd 140.34%);
+    background-repeat: no-repeat;
+  }
+  .cohort {
+    top: 33.5rem;
+  }
+  .cohort img {
+    width: 300px;
+  }
+  .welcome h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-inline: 0.5rem;
+  }
+  .text_input_1 {
+    width: 300px;
+    height: 40px;
+    padding: 10px 0px 10px 10px;
+  }
+  .text_input_1 > input {
+    font-size: 1rem;
+    font-weight: 400;
+    height: 40px;
+    padding-left: 5px;
+  }
+  .text_input_1 > button {
+    height: 40px;
+    font-size: 1rem;
+  }
 }
 @media (max-width: 400px) {
   .resource-main {
@@ -2052,5 +2257,18 @@ form {
   }
   .container-text {
     width: 400px;
+  }
+  .hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 35rem;
+    background: url("images/hero-image.png") center bottom / 300px,
+      url("images/data-science.svg") top 130px right 97% / 80px,
+      url("images/engineering.svg") right 50% top 40px / 80px,
+      url("images/product.svg") right 8% top 130px / 80px,
+      url("images/circle.svg") right 52% top 50px / 300px,
+      linear-gradient(177deg, #02021fd8 7.13%, #fffdfd 140.34%);
+    background-repeat: no-repeat;
   }
 }
