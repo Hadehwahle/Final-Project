@@ -837,6 +837,7 @@ form {
   padding: 0.625rem;
   outline: none;
   font-size: 1.3rem;
+  font-family: Poppins;
 }
 .form-input input::placeholder {
   color: #000;
@@ -976,6 +977,166 @@ form {
   font-size: 1.9375rem;
   font-weight: 500;
 }
+/* contact page */
+.contact-hero {
+  background: #030303;
+  width: 100%;
+  position: relative;
+  height: 42.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-hero::before {
+  content: "";
+  background-image: url("images/contact-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  inset: 0;
+  position: absolute;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.6875rem;
+  width: 35rem;
+  isolation: isolate;
+  color: #fafafe;
+  text-align: center;
+}
+.contact-text h1 {
+  font-size: 3.0625rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin: 0;
+}
+.contact-text p {
+  font-size: 1.9375rem;
+  font-weight: 600;
+  margin: 0;
+}
+.contact-form {
+  display: flex;
+  width: 40rem;
+  padding: 6.25rem 2.8125rem 2.31188rem 2.8125rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 3.625rem;
+  border: 1px solid #000;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 40rem;
+  height: 35.1875rem;
+  border: 1px solid #000;
+  background: #780e61;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 3.4rem;
+  padding-top: 3.5rem;
+}
+.contact-info > p {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  width: 10.125rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.9375rem;
+  background: #0d0d0d;
+}
+.contact-info i {
+  cursor: pointer;
+  color: #fafafe;
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+.contact-info div p {
+  color: #fff;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+.contact-form,
+.contact-info {
+  position: relative;
+  top: -2.5rem;
+}
+.contact-form input {
+  display: flex;
+  width: 34.375rem;
+  padding: 1.375rem 0.75rem;
+  align-items: center;
+  height: 5.5625rem;
+  gap: 0.625rem;
+  outline: none;
+  border-radius: 0.9375rem;
+  border: 1px solid #000;
+  background: #fffefe;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+.contact-form input::placeholder {
+  color: #000;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+.form-info {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-bottom: 7rem;
+}
+.contact-form textarea {
+  display: flex;
+  width: 34.375rem;
+  height: 22.75rem;
+  padding: 2.4375rem 1.4375rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.9375rem;
+  border: 1px solid #000;
+  background: #fffefe;
+  font-family: Poppins;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.contact-form button {
+  display: flex;
+  width: 17.5rem;
+  height: 6.0625rem;
+  padding: 1.625rem 2.375rem 1.625rem 1.3125rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  opacity: 0.8;
+  outline: none;
+  background: #ed212c;
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  border: 1px solid #ed212c;
+  background: transparent;
+  color: #ed212c;
+}
 
 /* Media query */
 @media (max-width: 1368px) {
@@ -994,6 +1155,68 @@ form {
   .alone h1 {
     font-size: 2rem;
     font-weight: 700;
+  }
+  .contact-hero {
+    position: relative;
+    height: 42.5rem;
+  }
+  .contact-text {
+    width: 35rem;
+  }
+  .contact-text h1 {
+    font-size: 3.0625rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin: 0;
+  }
+  .contact-text p {
+    font-size: 1.9375rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .contact-form {
+    width: 35rem;
+  }
+  .contact-info {
+    gap: 3.5rem;
+    width: 35rem;
+    height: 35.1875rem;
+  }
+  .contact-info > p {
+    width: 10.125rem;
+  }
+  .contact-info i {
+    font-size: 1.5625rem;
+    font-weight: 700;
+  }
+  .contact-info div p {
+    font-size: 1.5625rem;
+    font-weight: 700;
+  }
+  .contact-form,
+  .contact-info {
+    position: relative;
+    top: -2.5rem;
+  }
+  .contact-form input {
+    width: 29rem;
+  }
+  .contact-form input::placeholder {
+    font-size: 1.875rem;
+  }
+  .form-info {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-bottom: 7rem;
+  }
+  .contact-form textarea {
+    display: flex;
+    width: 29rem;
+    font-size: 1.5rem;
+  }
+  .contact-form button {
+    width: 17.3rem;
   }
 }
 @media (max-width: 1228px) {
@@ -1061,6 +1284,48 @@ form {
   }
   .interns h1 {
     margin-bottom: 0px;
+  }
+  .contact-hero {
+    position: relative;
+    height: 42.5rem;
+  }
+  .contact-text {
+    width: 35rem;
+  }
+  .contact-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .contact-text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .contact-form {
+    width: 26rem;
+  }
+  .contact-info {
+    width: 27rem;
+  }
+  .contact-form,
+  .contact-info {
+    position: relative;
+    top: -2.5rem;
+  }
+  .contact-form input {
+    width: 21rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  .contact-form input::placeholder {
+    font-size: 1.5rem;
+  }
+  .contact-form textarea {
+    padding-top: 1rem;
+    width: 21rem;
+    height: 10rem;
+  }
+  .contact-form button {
+    width: 17.3rem;
   }
 }
 @media (max-width: 1114px) {
@@ -1208,6 +1473,46 @@ form {
   .about-main div p {
     font-size: 2.5rem;
   }
+  .contact-hero {
+    position: relative;
+    height: 42.5rem;
+  }
+  .contact-text {
+    width: 35rem;
+  }
+  .contact-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .contact-text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .contact-form {
+    width: 50rem;
+  }
+  .contact-info {
+    display: none;
+  }
+  .contact-form,
+  .contact-info {
+    top: 0rem;
+    margin-top: 6rem;
+  }
+  .contact-form input {
+    width: 44rem;
+    height: 5rem;
+    font-size: 1.5rem;
+  }
+  .contact-form textarea {
+    padding-top: 1rem;
+    width: 44rem;
+    height: 17rem;
+  }
+  .contact-form button {
+    width: 17.3rem;
+    margin: 0px auto;
+  }
 }
 @media (max-width: 920px) {
   .reg-form {
@@ -1335,6 +1640,35 @@ form {
   #google img,
   #apple img {
     width: 1.5rem;
+  }
+  .contact-hero {
+    position: relative;
+    height: 35rem;
+  }
+  .contact-hero::before {
+    background-position: center;
+  }
+  .contact-text {
+    width: 35rem;
+  }
+  .contact-text h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+  .contact-text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .contact-form {
+    width: 35rem;
+  }
+  .contact-form input {
+    width: 30rem;
+  }
+  .contact-form textarea {
+    padding-top: 1rem;
+    width: 30rem;
+    height: 17rem;
   }
 }
 
@@ -1484,6 +1818,30 @@ form {
   #apple img {
     width: 1.3rem;
   }
+  .contact-hero {
+    height: 30rem;
+  }
+  .contact-hero::before {
+    background-position: center;
+  }
+  .contact-text {
+    width: 30rem;
+  }
+  .contact-text h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .contact-form {
+    width: 25rem;
+  }
+  .contact-form input {
+    width: 19rem;
+    height: 5rem;
+  }
+  .contact-form textarea {
+    width: 19rem;
+    height: 12rem;
+  }
 }
 @media (max-width: 590px) {
   .resource-pic {
@@ -1598,6 +1956,50 @@ form {
   }
   .form-input h1 {
     font-weight: 500;
+  }
+  .contact-hero {
+    height: 30rem;
+  }
+  .contact-hero::before {
+    background-position: center;
+  }
+  .contact-text {
+    width: 30rem;
+    margin-inline: 2rem;
+  }
+  .contact-text h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .contact-text p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .contact-form {
+    width: 20rem;
+  }
+  .contact-form input {
+    width: 14rem;
+    height: 4rem;
+    font-size: 1rem;
+  }
+  .contact-form input::placeholder {
+    font-size: 1rem;
+  }
+  .contact-form textarea {
+    width: 14rem;
+    height: 10rem;
+    font-size: 1rem;
+  }
+  .contact-form button {
+    font-size: 1rem;
+    width: 12rem;
+    text-align: center;
+    padding: 0;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 400px) {
