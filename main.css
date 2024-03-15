@@ -360,9 +360,13 @@ div > .sign-up {
 /* journey section */
 .journey {
   background-color: #ddd;
-  padding: 44px 179px 62px 179px;
+  height: 19rem;
   margin-top: 142px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 .journey p {
@@ -1286,6 +1290,8 @@ form {
     padding-bottom: 50px;
   }
 }
+
+/* max-width 1300px */
 @media (max-width: 1300px) {
   .trending-courses h2 {
     padding-top: 120px;
@@ -1326,6 +1332,32 @@ form {
     font-size: 1.3rem;
     font-weight: 600;
     margin-top: 10px;
+  }
+  .accolades {
+    text-align: center;
+  }
+  .accolades > h2 {
+    margin: 0;
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+  .accolades > h4 {
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+  }
+  .accolade-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 11px;
+    margin-bottom: 50px;
+    gap: 1rem;
+  }
+  .accolade-pic div img {
+    width: 150px;
+  }
+  .svg svg {
+    width: 800px;
   }
 }
 @media (max-width: 1228px) {
@@ -1676,8 +1708,25 @@ form {
     width: 17.3rem;
     margin: 0px auto;
   }
-  .btn-courses{
+  .btn-courses {
     margin-bottom: 3rem;
+  }
+  .accolades > h2 {
+    font-size: 2rem;
+  }
+  .accolades > h4 {
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+  }
+  .accolade-pic {
+    margin-block: 25px;
+    gap: 1rem;
+  }
+  .accolade-pic div img {
+    width: 120px;
+  }
+  .svg svg {
+    width: 700px;
   }
 }
 @media (max-width: 920px) {
@@ -1720,6 +1769,74 @@ form {
   }
   .payment {
     font-size: 1rem;
+  }
+  .journey p {
+    font-size: 1.7rem;
+  }
+  .red-blk-btn {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 12px 30px;
+  }
+
+  .newsletter {
+    margin: 0px;
+    margin-block: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .news-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newsletter > p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 56px;
+  }
+  .news-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .news-content p {
+    width: 100%;
+    margin-block: 0;
+    padding-block: 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .text_input_2 {
+    width: 525px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 0%;
+    transform: translateX(0%)
+  }
+  .text_input_2 > input {
+    flex: 0.8;
+    width: 491px;
+    height: inherit;
+    padding: 22px;
+    font-size: 1.3rem;
+  }
+  .text_input_2 > input::placeholder{
+    font-size: 1.3rem;
+  }
+  .text_input_2 > button {
+    flex: 0.2;
+    width: 100px;
+    height: inherit;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
 }
 @media (max-width: 850px) {
@@ -1836,7 +1953,7 @@ form {
     width: 30rem;
     height: 17rem;
   }
-    .brand {
+  .brand {
     position: relative;
     background: url("images/Frame\ 57.png") no-repeat;
     background-size: cover;
@@ -1857,11 +1974,17 @@ form {
     text-align: center;
     padding-right: 0;
   }
-  .brand div p{
+  .brand div p {
     font-size: 1.3rem;
   }
-  .brand div button{
+  .brand div button {
     font-size: 1.3rem;
+  }
+  .svg svg {
+    width: 600px;
+  }
+  .journey{
+    margin-top:50px
   }
 }
 
@@ -1974,6 +2097,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
     justify-content: center;
   }
   .choose-text {
@@ -1981,18 +2105,24 @@ form {
     flex-wrap: wrap;
     text-align: center;
   }
-  .choose-icon img{
+  .choose-icon img {
     width: 40px;
   }
   .choose-text h3 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 500;
+    padding-bottom: 5px;
   }
   .choose-text p {
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
+  }
+}
+@media (max-width: 750px) {
+  .svg svg {
+    width: 500px;
   }
 }
 @media (max-width: 720px) {
@@ -2129,6 +2259,50 @@ form {
     width: 19rem;
     height: 12rem;
   }
+  .svg svg {
+    width: 400px;
+  }
+  .brand div p {
+    padding-inline: 5px;
+  }
+  .journey p {
+    font-size: 1.3rem;
+    padding-inline: 5px;
+  }
+  .red-blk-btn {
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+  }
+
+  .newsletter > p {
+    font-size: 1.3rem;
+    padding-top: 30px;
+  }
+  .news-content h2 {
+    font-size: 1.7rem;
+  }
+  .news-content p {
+    font-size: 1.3rem;
+  }
+  .text_input_2 {
+    width: 525px;
+    height: 70px;
+  }
+  .text_input_2 > input {
+    flex: 0.8;
+    width: 491px;
+    font-size: 1.3rem;
+  }
+  .text_input_2 > input::placeholder{
+    font-size: 1.3rem;
+  }
+  .text_input_2 > button {
+    flex: 0.2;
+    width: 100px;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
 }
 @media (max-width: 590px) {
   .resource-pic {
@@ -2248,6 +2422,48 @@ form {
   .text_input_1 > button {
     height: 52px;
     font-size: 1rem;
+  }
+  .accolades h2 {
+    font-size: 1.5rem;
+    padding-inline: 10px;
+  }
+  .accolades h5 {
+    font-size: 1rem;
+  }
+  .accolade-pic div img {
+    width: 90px;
+  }
+  .svg svg {
+    width: 300px;
+  }
+  .newsletter > p {
+    font-size: 1.3rem;
+    padding-top: 30px;
+  }
+  .news-content h2 {
+    font-size: 1.7rem;
+  }
+  .news-content p {
+    font-size: 1.3rem;
+  }
+  .text_input_2 {
+    width: 425px;
+    height: 60px;
+  }
+  .text_input_2 > input {
+    flex: 0.8;
+    width: 491px;
+    font-size: 1.3rem;
+  }
+  .text_input_2 > input::placeholder{
+    font-size: 1.3rem;
+  }
+  .text_input_2 > button {
+    flex: 0.2;
+    width: 100px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-left: 10px;
   }
 }
 @media (max-width: 490px) {
@@ -2383,6 +2599,37 @@ form {
   .btn-courses button {
     padding: 20px 50px;
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 430px) {
+  .accolades h2 {
+    font-size: 1.5rem;
+    padding-inline: 5px;
+  }
+  .accolades h5 {
+    font-size: 1rem;
+  }
+  .accolade-pic div img {
+    width: 80px;
+  }
+  .svg svg {
+    width: 250px;
+  }
+  .text_input_2 {
+    width: 325px;
+    height: 60px;
+  }
+  .text_input_2 > input {
+    flex: 0.8;
+    width: 91px;
+    font-size: 1.3rem;
+  }
+  .text_input_2 > button {
+    flex: 0.2;
+    width: 50px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-left: 2px;
   }
 }
 @media (max-width: 400px) {
