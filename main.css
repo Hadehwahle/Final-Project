@@ -1960,6 +1960,40 @@ form {
   .plan img {
     width: 345px;
   }
+  .why-vephla {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .why-vephla > h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .choose-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .choose-text {
+    padding-left: 0px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .choose-icon img{
+    width: 40px;
+  }
+  .choose-text h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .choose-text p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+  }
 }
 @media (max-width: 720px) {
   .resource-pic {
