@@ -289,13 +289,13 @@ div > .sign-up {
   align-items: center;
 }
 .brand div {
+  width: 41.9rem;
   padding-right: 150px;
 }
 .brand div p {
   color: #fafafe;
   font-size: 1.5rem;
   font-weight: 400;
-  align-self: stretch;
 }
 /* accolades section */
 .accolades {
@@ -1139,6 +1139,31 @@ form {
 }
 
 /* Media query */
+@media (max-width: 1430px) {
+  .brand {
+    position: relative;
+    background: url("images/Frame\ 57.png") no-repeat;
+    background-size: 100%;
+    height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .brand::after {
+    content: "";
+    position: absolute;
+    background-color: #02021f;
+    inset: 0;
+    opacity: 0.6;
+  }
+  .brand div {
+    text-align: center;
+    z-index: 1;
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 1368px) {
   .sub-learn {
     width: 40rem;
@@ -1651,6 +1676,9 @@ form {
     width: 17.3rem;
     margin: 0px auto;
   }
+  .btn-courses{
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 920px) {
   .reg-form {
@@ -1807,6 +1835,33 @@ form {
     padding-top: 1rem;
     width: 30rem;
     height: 17rem;
+  }
+    .brand {
+    position: relative;
+    background: url("images/Frame\ 57.png") no-repeat;
+    background-size: cover;
+    height: 470px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .brand::after {
+    content: "";
+    position: absolute;
+    background-color: #02021f;
+    inset: 0;
+    opacity: 0.6;
+  }
+  .brand div {
+    text-align: center;
+    padding-right: 0;
+  }
+  .brand div p{
+    font-size: 1.3rem;
+  }
+  .brand div button{
+    font-size: 1.3rem;
   }
 }
 
@@ -2279,9 +2334,6 @@ form {
     font-size: 1.8rem;
     padding-top: 60px;
     padding-bottom: 10px;
-  }
-  .btn-courses button {
-    font-size: 1.5rem;
   }
   .courses {
     justify-content: space-evenly;
