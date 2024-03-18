@@ -1146,10 +1146,10 @@ form {
 
 /* Media query */
 @media (min-width: 1430px) {
-  .svg svg{
+  .svg svg {
     width: 1005px;
   }
-  .accolade-pic{
+  .accolade-pic {
     justify-content: center;
     gap: 2rem;
   }
@@ -1381,11 +1381,11 @@ form {
     padding-bottom: 35px;
     justify-content: space-between;
   }
-  
+
   hr {
     width: 95%;
   }
-  .footer-nav img{
+  .footer-nav img {
     width: 7rem;
   }
   .footer-nav a {
@@ -1400,7 +1400,7 @@ form {
     font-weight: 400;
     transition: all 0.3s ease-in-out;
   }
-  .contact p > a{
+  .contact p > a {
     font-size: 1.4rem;
     font-weight: 400;
   }
@@ -1868,7 +1868,7 @@ form {
     justify-content: center;
     margin-top: 20px;
     margin-left: 0%;
-    transform: translateX(0%)
+    transform: translateX(0%);
   }
   .text_input_2 > input {
     flex: 0.8;
@@ -1877,7 +1877,7 @@ form {
     padding: 22px;
     font-size: 1.3rem;
   }
-  .text_input_2 > input::placeholder{
+  .text_input_2 > input::placeholder {
     font-size: 1.3rem;
   }
   .text_input_2 > button {
@@ -2032,8 +2032,8 @@ form {
   .svg svg {
     width: 600px;
   }
-  .journey{
-    margin-top:50px
+  .journey {
+    margin-top: 50px;
   }
 }
 
@@ -2242,6 +2242,9 @@ form {
     width: 28rem;
     height: auto;
   }
+  .resource > p {
+    text-align: left;
+  }
   #sign {
     height: auto;
     margin-block: 4rem;
@@ -2343,7 +2346,7 @@ form {
     width: 491px;
     font-size: 1.3rem;
   }
-  .text_input_2 > input::placeholder{
+  .text_input_2 > input::placeholder {
     font-size: 1.3rem;
   }
   .text_input_2 > button {
@@ -2357,24 +2360,23 @@ form {
     padding-bottom: 15px;
     justify-content: space-between;
     flex-direction: column;
-
   }
-  .footer-nav img{
+  .footer-nav img {
     width: 5.5rem;
   }
-  .footer-nav a{
+  .footer-nav a {
     font-size: 0.8rem;
   }
   hr {
     width: 95%;
   }
-  .contact{
+  .contact {
     gap: 0px;
   }
-  .contact a{
+  .contact a {
     padding-inline: 0.5rem;
   }
-  .contact p > a{
+  .contact p > a {
     font-size: 0.8rem;
   }
   .copy {
@@ -2382,11 +2384,11 @@ form {
     font-weight: 400;
     padding-bottom: 10px;
   }
- .contact a svg{
+  .contact a svg {
     width: 20px;
     height: 20px;
   }
-  .contact a img{
+  .contact a img {
     width: 17px;
   }
 }
@@ -2541,7 +2543,7 @@ form {
     width: 491px;
     font-size: 1.3rem;
   }
-  .text_input_2 > input::placeholder{
+  .text_input_2 > input::placeholder {
     font-size: 1.3rem;
   }
   .text_input_2 > button {
