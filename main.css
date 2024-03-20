@@ -250,6 +250,7 @@ div > .sign-up {
   border: 1px solid #ed212c;
 }
 .plan {
+  cursor: pointer;
   width: 406px;
   margin: 6px;
   padding: 20px 25px;
