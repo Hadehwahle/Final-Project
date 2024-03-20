@@ -1234,7 +1234,7 @@ label {
   display: flex;
   width: 1240px;
   height: auto;
-  padding:50px 438px;
+  padding: 50px 438px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -1321,7 +1321,6 @@ label {
 
 .flexbox-four p {
   width: 325px;
-
 }
 
 .flexbox-five {
@@ -1427,7 +1426,6 @@ label {
   font-weight: 500;
   line-height: normal;
   width: 415px;
-
 }
 
 /* flex boxes start */
@@ -1618,10 +1616,12 @@ footer {
   padding-bottom: 75px;
   justify-content: center;
   display: flex;
+  align-items: center;
 }
+
 hr {
   width: 85%;
-  margin-left: 120px;
+  margin: 0px auto;
 }
 .footer-nav a {
   display: flex;
@@ -1645,13 +1645,14 @@ footer p {
   display: flex;
   gap: 29px;
   justify-content: center;
+  align-items: center;
   margin-top: 23px;
 }
 .contact a {
   display: flex;
 }
 .contact p {
-  font-size: 22.821px;
+  font-size: 1.4263125rem;
   font-weight: 400;
 }
 .copy {
@@ -1664,152 +1665,9 @@ footer p {
   margin: 0;
 }
 
-/*FOOTER ENDS */
+/* Media query */
 
-/* RESPONSIVENESS */
-
-/* DESKTOP VIEW */
-@media screen and (min-width: 1024px) and (max-width: 1322px) {
-  .course {
-    width: 1000%;
-  }
-}
-
-@media (max-width: 1137px) {
-  .ui-ux {
-    margin-left: 150px;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 1000px) {
-  .hero-container {
-    height: 800px;
-  }
-  .free-test {
-    padding: 16px;
-    font-size: 1.1rem;
-  }
-
-  .image-one {
-    width: 700px;
-    height: 505px;
-  }
-
-  .form-container,
-  .img-container {
-    width: 140%;
-  }
-
-  .uiux-buttons {
-    margin-left: -90px;
-  }
-
-  .ui-overview p {
-    font-size: 1.4rem;
-    line-height: 25px;
-    width: 420px;
-    word-spacing: 5px;
-  }
-
-  .ui-ux {
-    margin-left: 260px;
-    font-size: 0.95rem;
-    width: 270px;
-    height: 58px;
-    padding: 25px 6px;
-  }
-}
-
-/*DESKTOP VIEW ENDS*/
-
-/*768px screen size ipad and tabs */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero-container {
-    height: 750px;
-    flex-wrap: wrap;
-  }
-  .free-test {
-    padding: 18px;
-    font-size: 1.3rem;
-  }
-
-  .image-one {
-    width: 650px;
-    height: 505px;
-    margin-left: 100px;
-  }
-
-  .course-overview,
-  .register {
-    font-size: 1.05rem;
-  }
-
-  .ui-ux {
-    display: flex;
-    font-size: 0.95rem;
-    width: 270px;
-    height: 58px;
-    padding: 25px 6px;
-  }
-
-  .ui-ux-outline,
-  .frontend-outline,
-  .data-analytics-outline,
-  .nano-outline,
-  .fullstack-outline,
-  .googlesheets-outline,
-  .project-management-outline,
-  .graphics-design-outline {
-    font-size: 1.3rem;
-  }
-
-  .about-uiux h1,
-  .about-frontend h1,
-  .about-data-analytics h1,
-  .about-nano h1,
-  .about-fullstack-design h1,
-  .about-googlesheets h1,
-  .about-project-management h1,
-  .about-graphics-design h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-
-  /* FREE TEST FORM RESPONSIVENESS */
-  .hero-section {
-    width: 130%;
-  }
-  .form-container {
-    background: #e3dfde;
-    width: 136.9%;
-  }
-}
-
-/*IPAD AND TAB VIEW ENDS */
-
-/* Media Query for low resolution  Tablets, Ipads */
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .ui-ux {
-    display: flex;
-    font-size: 0.95rem;
-    width: 270px;
-    height: 58px;
-    padding: 25px 6px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 420px;
-  }
-}
-/* Media Query for low resolution  TABLETS, IPADS ENDS */
-
-/* PHONE SCREEN RESPONSIVENESS BEGINS*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /*COURSES AND PLANS */
-
+@media (max-width: 1480px) {
   .uiux-course-outline-container,
   .frontend-course-outline-container,
   .data-analytics-course-outline-container,
@@ -1818,247 +1676,119 @@ footer p {
   .googlesheets-outline-container,
   .project-management-outline-container,
   .graphics-design-outline-container {
-    height: 600px;
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    margin: 250px 0px 400px 0px;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
+    width: 78rem;
   }
-
+  .fullstack-image,
   .uiux-image,
   .frontend-image,
   .data-img,
   .nano-image,
-  .googlesheet-img,
-  .fullstack-image,
   .project-management-image,
   .graphics-image {
-    height: 250px;
-    width: 580px;
+    width: 570px;
   }
+  .googlesheet-img {
+    width: auto;
+  }
+}
 
+@media (max-width: 1360px) {
+  .image-one {
+    display: none;
+  }
   .hero-container {
-    height: 700px;
+    position: relative;
   }
-
-  .uiux-course-outline-container,
-  .data-analytics-course-outline-container,
-  .fullstack-design-outline-container,
-  .googlesheets-outline-container {
-    display: flex;
-    flex-direction: column-reverse;
+  .hero-container::before {
+    content: "";
+    background-image: url(images1/courses\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
   }
-
-  .ui-schedule {
-    margin-top: 30px;
-  }
-
-  .uiux-buttons {
-    margin-left: -170px;
-  }
-
-  .about-uiux {
-    margin-top: 40px;
-    margin-bottom: 150px;
-  }
-
-  .frontend-schedule {
-    margin-top: 130px;
-  }
-
-  .about-frontend {
-    margin-top: -80px;
-    margin-bottom: 290px;
-  }
-
-  .data-schedule {
-    margin-top: 50px;
-  }
-
-  .about-data-analytics,
-  .about-fullstack-design,
-  .about-nano,
-  .about-googlesheets,
-  .about-project-management,
-  .about-graphics-design {
-    margin-top: -80px;
-  }
-  .about-data-analytics {
-    margin-bottom: 100px;
-  }
-
-  .about-nano {
-    margin-bottom: 60px;
-  }
-
-  .fullstack-schedule {
-    margin-top: 170px;
-  }
-
-  .about-fullstack-design {
-    margin-bottom: 140px;
-  }
-
-  .googlesheets-schedule {
-    margin-top: 140px;
-  }
-
-  .project-management-schedule {
-    margin-top: 190px;
-  }
-
-  .graphics-design-schedule {
-    margin-top: 160px;
-  }
-  /* COURSES AND PLANS ENDS */
-
-  /* RESPONSIVENESS FOR EACH COURSE */
-  .overview p {
-    font-size: 1.3rem;
-  }
-
-  .ui-overview p {
-    font-size: 1.5rem;
-  }
-
-  .flexbox,
-  .flex-boxes,
-  .flexboxes,
-  .boxes {
-    margin: 30px 0px 0px 160%;
-  }
-
-  .first-pair,
-  .second-pair,
-  .third-pair,
-  .flex-one,
-  .flex-two,
-  .flex-three,
-  .first-flex,
-  .second-flex,
-  .third-flex,
-  .fourth-flex,
-  .fifth-flex,
-  .sixth-flex,
-  .pair-one,
-  .pair-two,
-  .pair-three,
-  .pair-four,
-  .pair-five {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .text {
     margin: auto;
+    width: 100%;
+    isolation: isolate;
+    text-align: center;
   }
-
-  .first-pair p,
-  .second-pair p,
-  .third-pair p {
-    font-size: 1.4rem;
-    width: 400px;
+  .text p,
+  .text h1 {
+    width: auto;
   }
-
-  .first-box,
-  .box-one {
-    margin: 30px 0px 0px 0px;
-  }
-
-  .third-box,
-  .fifth-box,
-  .box-three,
-  .box-five,
-  .boxthree,
-  .boxfive,
-  .boxseven,
-  .boxnine,
-  .box-eleven,
-  .flexbox-five,
-  .flexbox-three,
-  .flexbox-five,
-  .flexbox-seven,
-  .flexbox-nine {
-    margin: 60px 0px 0px 0px;
-  }
-
-  .box-seven {
-    margin: 60px 0px 0px -300px;
-  }
-
-  .project-pair-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .course-content {
-    height: 1160.44px;
-  }
-
-  .course-content h1 {
-    margin: 0px 0px 50px 0px;
-  }
-
-  .project-flex-three {
-    height: 484px;
-    width: 513px;
-  }
-
-  .project-flex-four {
-    height: 442px;
-    margin: 40px 0px 0px 25px;
-  }
-
-  .management {
-    margin: -50px 0px 50px 700px;
-  }
-
-  .ui-ux {
-    margin-left: -170px;
-    font-size: 1.5rem;
-    width: 350px;
-  }
-  /* COURSE RESPONSIVENESS ENDS */
-
-  /* FREE TEST FORM RESPONSIVENESS */
-  .hero-section {
-    width: 208%;
-  }
-  .form-container {
-    background: #e3dfde;
-    width: 291%;
-  }
-
-  /*FOOTER RESPONSIVENESS */
-
+}
+@media (max-width: 1300px) {
   .footer-nav {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    justify-content: space-between;
+  }
+
+  hr {
+    width: 95%;
+  }
+  .footer-nav img {
+    width: 7rem;
+  }
+  .footer-nav a {
     display: flex;
-    flex-direction: column;
+    width: auto;
+    min-width: auto;
+    padding: 0px 20px 0px 20px;
     justify-content: center;
     align-items: center;
-    line-height: 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
   }
-
-  .footer-nav img {
-    padding: 30px 0px;
+  .contact p > a {
+    font-size: 1.4rem;
+    font-weight: 400;
   }
-}
-
-/* max-width 446px */
-@media (min-width: 320px) and (max-width: 446px) {
-  .flexbox,
-  .flex-boxes,
-  .flexboxes,
-  .boxes {
-    margin: 30px 0px 0px 185%;
+  .copy {
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 }
-
-/* nav bar */
+@media (max-width: 1285px) {
+  .uiux-course-outline-container,
+  .frontend-course-outline-container,
+  .data-analytics-course-outline-container,
+  .nano-course-outline-container,
+  .fullstack-design-outline-container,
+  .googlesheets-outline-container,
+  .project-management-outline-container,
+  .graphics-design-outline-container {
+    width: 70rem;
+  }
+  .fullstack-image,
+  .uiux-image,
+  .frontend-image,
+  .data-img,
+  .nano-image,
+  .project-management-image,
+  .graphics-image {
+    width: 500px;
+  }
+  .googlesheet-img {
+    width: auto;
+  }
+  .uiux-buttons {
+    margin-left: 0px;
+  }
+  .ui-ux-outline li,
+  .frontend-outline li,
+  .data-analytics-outline li,
+  .nano-outline li,
+  .fullstack-outline li,
+  .project-management-outline li,
+  .googlesheets-outline li,
+  .graphics-design-outline li {
+    padding-right: 100px;
+  }
+}
 @media (max-width: 1228px) {
   header {
     height: 100px;
@@ -2074,6 +1804,149 @@ footer p {
   .copy,
   .sign button {
     font-size: 1rem;
+  }
+}
+@media (max-width: 1160px) {
+  .text h1 {
+    margin-inline: 10px;
+    font-weight: 700;
+    font-size: 3.5rem;
+  }
+  .text p {
+    margin-inline: 10px;
+    font-size: 1.5rem;
+  }
+  .frontend-course-outline-container,
+  .nano-course-outline-container,
+  .project-management-outline-container,
+  .graphics-design-outline-container {
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+  }
+  .uiux-course-outline-container,
+  .data-analytics-course-outline-container,
+  .fullstack-design-outline-container,
+  .googlesheets-outline-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 60rem;
+  }
+  .fullstack-image,
+  .uiux-image,
+  .frontend-image,
+  .data-img,
+  .nano-image,
+  .project-management-image,
+  .googlesheet-img,
+  .graphics-image {
+    width: 650px;
+  }
+  .uiux-buttons {
+    margin-left: 0px;
+  }
+  .ui-ux-outline li,
+  .frontend-outline li,
+  .data-analytics-outline li,
+  .nano-outline li,
+  .fullstack-outline li,
+  .project-management-outline li,
+  .googlesheets-outline li,
+  .graphics-design-outline li {
+    padding-right: 100px;
+  }
+  .about-frontend h1,
+  .about-data-analytics h1,
+  .about-nano h1,
+  .about-fullstack-design h1,
+  .about-googlesheets h1,
+  .about-project-management h1,
+  .about-graphics-design h1 {
+    padding-top: 40px;
+    width: 700px;
+  }
+  .about-uiux {
+    margin-top: 40px;
+  }
+  .ui-ux-outline {
+    width: 700px;
+  }
+  .frontend-buttons,
+  .data-analytics-buttons,
+  .nano-buttons,
+  .fullstack-buttons,
+  .googlesheets-buttons,
+  .project-management-buttons,
+  .graphics-design-buttons {
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .frontend-course-outline-container,
+  .nano-course-outline-container,
+  .project-management-outline-container,
+  .graphics-design-outline-container {
+    width: 50rem;
+  }
+  .uiux-course-outline-container,
+  .data-analytics-course-outline-container,
+  .fullstack-design-outline-container,
+  .googlesheets-outline-container {
+    width: 50rem;
+  }
+  .fullstack-image,
+  .uiux-image,
+  .frontend-image,
+  .data-img,
+  .nano-image,
+  .project-management-image,
+  .googlesheet-img,
+  .graphics-image {
+    width: 650px;
+  }
+  .googlesheet-img {
+    margin-left: 0;
+  }
+  .sheets-schedule {
+    margin-left: 0;
+  }
+  .uiux-buttons {
+    margin-left: 0px;
+  }
+  .ui-ux-outline li,
+  .frontend-outline li,
+  .data-analytics-outline li,
+  .nano-outline li,
+  .fullstack-outline li,
+  .project-management-outline li,
+  .googlesheets-outline li,
+  .graphics-design-outline li {
+    padding-right: 100px;
+  }
+  .about-frontend h1,
+  .about-data-analytics h1,
+  .about-nano h1,
+  .about-fullstack-design h1,
+  .about-googlesheets h1,
+  .about-project-management h1,
+  .about-graphics-design h1 {
+    padding-top: 40px;
+    width: 700px;
+  }
+  .about-uiux {
+    margin-top: 40px;
+  }
+  .ui-ux-outline {
+    width: 700px;
+  }
+  .frontend-buttons,
+  .data-analytics-buttons,
+  .nano-buttons,
+  .fullstack-buttons,
+  .googlesheets-buttons,
+  .project-management-buttons,
+  .graphics-design-buttons {
+    justify-content: center;
   }
 }
 @media (max-width: 850px) {
@@ -2102,8 +1975,215 @@ footer p {
   nav.show {
     display: flex;
   }
+  .text h1 {
+    margin-inline: 10px;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .text p {
+    margin-inline: 10px;
+    font-size: 1.5rem;
+  }
+  .frontend-course-outline-container,
+  .nano-course-outline-container,
+  .project-management-outline-container,
+  .graphics-design-outline-container {
+    width: 38rem;
+  }
+  .uiux-course-outline-container,
+  .data-analytics-course-outline-container,
+  .fullstack-design-outline-container,
+  .googlesheets-outline-container {
+    width: 38rem;
+  }
+  .fullstack-image,
+  .uiux-image,
+  .frontend-image,
+  .data-img,
+  .nano-image,
+  .project-management-image,
+  .googlesheet-img,
+  .graphics-image {
+    width: 550px;
+  }
+  .ui-ux-outline li,
+  .frontend-outline li,
+  .data-analytics-outline li,
+  .nano-outline li,
+  .fullstack-outline li,
+  .project-management-outline li,
+  .googlesheets-outline li,
+  .graphics-design-outline li {
+    padding-right: 50px;
+    margin: 0px auto;
+  }
+  .about-frontend h1,
+  .about-data-analytics h1,
+  .about-nano h1,
+  .about-fullstack-design h1,
+  .about-googlesheets h1,
+  .about-project-management h1,
+  .about-graphics-design h1 {
+    padding-top: 40px;
+    width: 570px;
+    margin: 0px auto;
+  }
+  .about-uiux {
+    margin-top: 40px;
+  }
+  .ui-ux-outline {
+    width: 550px;
+    margin-left: 30px;
+  }
+  .data-analytics-outline,
+  .fullstack-outline,
+  .googlesheets-outline {
+    width: 550px;
+    margin-right: 40px;
+  }
+  .frontend-buttons,
+  .data-analytics-buttons,
+  .nano-buttons,
+  .fullstack-buttons,
+  .googlesheets-buttons,
+  .project-management-buttons,
+  .graphics-design-buttons {
+    justify-content: center;
+  }
 }
 
+@media (max-width: 660px) {
+  .footer-nav {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .footer-nav img {
+    width: 5.5rem;
+  }
+  .footer-nav a {
+    font-size: 0.8rem;
+  }
+  hr {
+    width: 95%;
+  }
+  .contact {
+    gap: 0px;
+  }
+  .contact a {
+    padding-inline: 0.5rem;
+  }
+  .contact p > a {
+    font-size: 0.8rem;
+  }
+  .copy {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  .contact a svg {
+    width: 20px;
+    height: 20px;
+  }
+  .contact a img {
+    width: 17px;
+  }
+  .frontend-course-outline-container,
+  .nano-course-outline-container,
+  .project-management-outline-container,
+  .graphics-design-outline-container {
+    width: 30rem;
+  }
+  .uiux-course-outline-container,
+  .data-analytics-course-outline-container,
+  .fullstack-design-outline-container,
+  .googlesheets-outline-container {
+    width: 30rem;
+  }
+  .fullstack-image,
+  .uiux-image,
+  .frontend-image,
+  .data-img,
+  .nano-image,
+  .project-management-image,
+  .googlesheet-img,
+  .graphics-image {
+    width: 400px;
+    height: 280px;
+    object-fit: contain;
+    margin: 30px auto;
+  }
+  .about-fullstack-design,
+  .about-data-analytics,
+  .about-uiux,
+  .about-googlesheets {
+    margin-left: 0px;
+  }
+  .ui-ux-outline li,
+  .frontend-outline li,
+  .data-analytics-outline li,
+  .nano-outline li,
+  .fullstack-outline li,
+  .project-management-outline li,
+  .googlesheets-outline li,
+  .graphics-design-outline li {
+    padding-right: 0px;
+    margin: 0px auto;
+  }
+  .about-frontend h1,
+  .about-data-analytics h1,
+  .about-nano h1,
+  .about-fullstack-design h1,
+  .about-googlesheets h1,
+  .about-project-management h1,
+  .about-graphics-design h1 {
+    padding-top: 40px;
+    width: 420px;
+    margin-left: 0px;
+  }
+  .data-schedule {
+    margin-left: 0px;
+  }
+  .about-uiux {
+    margin-top: 40px;
+  }
+  .graphics-design-schedule,
+  .project-management-schedule,
+  .nano-schedule,
+  .frontend-schedule {
+    margin-left: 0px;
+  }
+  .fullstack-schedule {
+    margin: 0px;
+  }
+  .ui-ux-outline {
+    width: 420px;
+    margin-left: 60px;
+  }
+  .data-analytics-outline,
+  .fullstack-outline,
+  .googlesheets-outline {
+    width: 420px;
+    margin-right: 10px;
+  }
+  .sheets-schedule {
+    margin-left: 50px;
+  }
+  .frontend-buttons,
+  .data-analytics-buttons,
+  .nano-buttons,
+  .fullstack-buttons,
+  .googlesheets-buttons,
+  .project-management-buttons,
+  .graphics-design-buttons {
+    justify-content: center;
+  }
+  .uiux-buttons {
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media (max-width: 490px) {
   .register-btn {
     display: none;
@@ -2111,5 +2191,116 @@ footer p {
   .transparent-btn {
     width: 80px;
     padding: 10px 0px !important;
+  }
+  .hero-container {
+    height: 450px;
+  }
+  .text h1 {
+    margin-inline: 10px;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+  .text p {
+    margin-inline: 10px;
+    font-size: 1.3rem;
+  }
+  .frontend-course-outline-container,
+  .nano-course-outline-container,
+  .project-management-outline-container,
+  .graphics-design-outline-container,
+  .uiux-course-outline-container,
+  .data-analytics-course-outline-container,
+  .fullstack-design-outline-container,
+  .googlesheets-outline-container {
+    width: 20rem;
+  }
+  .ui-schedule,
+  .frontend-schedules,
+  .data-schedule,
+  .nano-schedules,
+  .stack-schedule,
+  .sheets-schedule,
+  .project-managements-schedule,
+  .graphics-designs-schedule {
+    margin-left: 30px;
+  }
+  .fullstack-image,
+  .uiux-image,
+  .frontend-image,
+  .data-img,
+  .nano-image,
+  .project-management-image,
+  .googlesheet-img,
+  .graphics-image {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin: 30px auto;
+  }
+  .about-fullstack-design,
+  .about-data-analytics,
+  .about-uiux,
+  .about-googlesheets {
+    margin-left: 0px;
+  }
+  .ui-ux-outline li,
+  .frontend-outline li,
+  .data-analytics-outline li,
+  .nano-outline li,
+  .fullstack-outline li,
+  .project-management-outline li,
+  .googlesheets-outline li,
+  .graphics-design-outline li {
+    width: 250px;
+  }
+  .about-frontend h1,
+  .about-data-analytics h1,
+  .about-nano h1,
+  .about-fullstack-design h1,
+  .about-googlesheets h1,
+  .about-project-management h1,
+  .about-graphics-design h1 {
+    padding-top: 40px;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .about-uiux {
+    margin-top: 40px;
+  }
+  .about-uiux h1 {
+    margin-left: 50px;
+  }
+  .graphics-design-schedule,
+  .project-management-schedule,
+  .nano-schedule,
+  .frontend-schedule {
+    margin-left: 0px;
+  }
+  .fullstack-schedule {
+    margin: 0px;
+  }
+  .data-analytics-outline,
+  .fullstack-outline,
+  .googlesheets-outline {
+    width: 420px;
+    margin-right: 10px;
+  }
+  .frontend-buttons,
+  .data-analytics-buttons,
+  .nano-buttons,
+  .fullstack-buttons,
+  .googlesheets-buttons,
+  .project-management-buttons,
+  .graphics-design-buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .uiux-buttons {
+    margin-left: 70px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
